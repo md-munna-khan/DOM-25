@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of dom</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+    .fav-places li{
+        color: blueviolet;
+    }
+#fruits-tittle{
+    color: deepskyblue;
+}
+.important-phone{
+    color: aqua;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my dom</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque at ipsum a dolore ab rerum numquam fuga? Incidunt commodi unde provident nemo rerum quaerat ad recusandae, possimus accusamus laudantium qui!</p>
+    </header>
+<main id="main-container">
+   <section>
+    <h1>my fav phone</h1>
+    <ul>
+        <li class="important-phone">i phone</li>
+        <li class="important-phone">samsung</li>
+        <li class="important-phone">oppo</li>
+        <li>redmi</li>
+    </ul>
+   </section>
+   <section>
+    <h1 id="fruits-tittle">my fav fruits</h1>
+    <ul>
+        <li>apple</li>
+        <li>orange</li>
+        <li>banana</li>
+        <li>jackFruit</li>
+    </ul>
+   </section>
+   <section id="places-container">
+    <h1>my fav palces</h1>
+    <ul id="places-list">
+        <li>coxs bazar</li>
+        <li>bandaron</li>
+        <li>jaflong</li>
+        <li>shitakundu</li>
+    </ul>
+   </section>
+   <div id="my-details">
+    <h1>name:munna</h1>
+    <p>age :23</p>
+   </div>
+</main>
+<script src="dom.js"></script>
+<script src="append.js"></script>
+<script src="styleIn.js"></script>
+<script>
+   const liCollectiom = document.getElementsByTagName("li");
+  for(const li of liCollectiom){
+    // co nsole.log(li.innerText)
+  }
+  const allHeading =document.getElementsByTagName('h1');
+  for (const h1 of allHeading){
+    // console.log(h1.innerText)
+  }
+  const allUl = document.getElementsByTagName("ul");
+//   console.log(allUl.innerText);
+  const phone =document.getElementsByClassName ('');
+// console.log(phone)
+//query selector
+const someLi = document.querySelector(".fav-places li");
+
+//    console.log(someLi)
+const div =document.getElementById("my-details");
+const text = div.innerText;
+// console.log(text)
+</script>
+</body>
+</html>
